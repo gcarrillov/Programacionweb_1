@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Consultas de Universidades Licenciadas</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>Consulta de Universidades Licenciadas</h1>
+    <form action="cgi-bin/consulta.pl" method="post">
+        <div>
+            <label for="campo">Seleccione el campo a consultar:</label>
+            <select name="campo" id="campo">
+                <option value="Nombre">Nombre</option>
+                <option value="Periodo_de_Licenciamiento">Periodo de Licenciamiento</option>
+                <option value="Departamento_Local">Departamento Local</option>
+                <option value="Denominacion_Programa">Denominacion Programa</option>
+            </select>
+        </div>
+        <div>
+            <label for="valor">Ingrese el valor a buscar:</label>
+            <input type="text" name="valor" id="valor" required>
+            <button type="submit">Consultar</button>
+        </div>
+    </form>
+</body>
+</html>
